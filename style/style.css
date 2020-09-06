@@ -1,0 +1,133 @@
+@font-face {
+  font-family: 'Balsamiq';
+  src: url('../fonts/BalsamiqSans-Regular.ttf');
+  font-display: swap;
+}
+/* Global */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.7;
+  font-family: 'Balsamiq', sans-serif;
+}
+.container {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 1140px;
+  padding: 0 40px;
+}
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+section {
+  padding: 80px 0;
+}
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+.btn {
+  background: #1dd1a1;
+  display: inline-block;
+  letter-spacing: 1px;
+  border-radius: 3px;
+}
+/* Header */
+.header {
+  position: relative;
+}
+.nav {
+  padding-top: 65px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99;
+}
+.nav__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.nav__list li {
+  display: inline-block;
+  margin: 0 45px;
+}
+.nav__list li a {
+  letter-spacing: 2px;
+  font-size: 17px;
+  transition: all 0.2s linear;
+}
+.nav__list li a:hover {
+  color: #1dd1a1;
+  transition: all 0.2s linear;
+}
+/* Splash */
+.splash {
+  background: url('../img/splash.jpg');
+  height: 745px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-position: bottom;
+}
+.splash__box {
+  color: #ffffff;
+  margin: 250px auto 0;
+  max-width: 600px;
+  text-align: center;
+}
+.splash__box h2 {
+  letter-spacing: 8px;
+  font-size: 36px;
+}
+.splash__box p {
+  letter-spacing: 3px;
+  margin-top: -5px;
+}
+.splash__box a {
+  margin-top: 15px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 14px;
+  width: 165px;
+}
+.splash__media {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.splash__media li {
+  display: inline-block;
+  margin: 15px 2px;
+  font-size: 24px;
+}
+.splash__media li a {
+  transition: all 0.2s linear;
+}
+.splash__media li a:hover {
+  color: #1dd1a1;
+  transition: all 0.2s linear;
+}
+/* Life */
+/* Design */
+/* Community */
+/* Email */
+/* Download */
+/* Footer */

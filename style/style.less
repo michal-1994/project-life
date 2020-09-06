@@ -1,10 +1,13 @@
 // Variables
+@color-light: #ffffff;
+@color-primary: #1dd1a1;
 
-@transition: all .2s ease;
+@radius: 3px;
+@transition: all 0.2s linear;
 
 @font-face {
-  font-family: '';
-  src: url('');
+  font-family: 'Balsamiq';
+  src: url('../fonts/BalsamiqSans-Regular.ttf');
   font-display: swap;
 }
 
@@ -17,8 +20,7 @@ body {
   margin: 0;
   font-size: 16px;
   line-height: 1.7;
-  font-family: 'Roboto';
-  font-weight: 400;
+  font-family: 'Balsamiq', sans-serif;
 }
   
 .container {
@@ -40,5 +42,117 @@ section {
 
 a {
   text-decoration: none;
-  color: @color-primary;
+  color: @color-light;
 }
+
+h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  background: @color-primary;
+  display: inline-block;
+  letter-spacing: 1px;
+  border-radius: @radius;
+}
+
+/* Header */ 
+
+.header {
+  position: relative;
+}
+
+.nav {
+  padding-top: 65px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99;
+}
+
+.nav__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  li {
+    display: inline-block;
+    margin: 0 45px;
+    a {
+      letter-spacing: 2px;
+      font-size: 17px;
+      transition: @transition;
+      &:hover {
+        color: @color-primary;
+        transition: @transition;
+      }
+    }
+  }
+}
+
+/* Splash */ 
+
+.splash {
+  background: url('../img/splash.jpg');
+  height: 745px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-position: bottom;
+}
+
+.splash__box {
+  color: @color-light;
+  margin: 250px auto 0;
+  max-width: 600px;
+  text-align: center;
+  h2 {
+    letter-spacing: 8px;
+    font-size: 36px;
+  }
+  p {
+    letter-spacing: 3px;
+    margin-top: -5px;
+  }
+  a {
+    margin-top: 15px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+    width: 165px;
+  }
+}
+
+.splash__media {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  li {
+    display: inline-block;
+    margin: 15px 2px;
+    font-size: 24px;
+    a {
+      transition: @transition;
+      &:hover {
+        color: @color-primary;
+        transition: @transition;
+      }
+    }
+  }
+}
+
+/* Life */ 
+
+/* Design */ 
+
+/* Community */ 
+
+/* Email */ 
+
+/* Download */ 
+
+/* Footer */ 
