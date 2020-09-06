@@ -3,6 +3,11 @@
   src: url('../fonts/BalsamiqSans-Regular.ttf');
   font-display: swap;
 }
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-Light.ttf');
+  font-display: swap;
+}
 /* Global */
 *,
 *::before,
@@ -19,7 +24,7 @@ body {
   margin: 0 auto;
   text-align: center;
   max-width: 1140px;
-  padding: 0 40px;
+  padding: 0 20px;
 }
 .wrapper {
   display: flex;
@@ -27,7 +32,7 @@ body {
   justify-content: space-between;
 }
 section {
-  padding: 80px 0;
+  padding: 120px 0;
 }
 a {
   text-decoration: none;
@@ -35,6 +40,7 @@ a {
 }
 h1,
 h2,
+h3,
 p {
   margin: 0;
   padding: 0;
@@ -44,6 +50,10 @@ p {
   display: inline-block;
   letter-spacing: 1px;
   border-radius: 3px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 14px;
 }
 /* Header */
 .header {
@@ -85,7 +95,7 @@ p {
 }
 .splash__box {
   color: #ffffff;
-  margin: 250px auto 0;
+  margin: 205px auto 0;
   max-width: 600px;
   text-align: center;
 }
@@ -99,9 +109,6 @@ p {
 }
 .splash__box a {
   margin-top: 15px;
-  height: 50px;
-  line-height: 50px;
-  font-size: 14px;
   width: 165px;
 }
 .splash__media {
@@ -125,9 +132,105 @@ p {
   color: #1dd1a1;
   transition: all 0.2s linear;
 }
-/* Life */
-/* Design */
+/* Intro, Intro-1 */
+.intro {
+  background: #f1f2f6;
+}
+.intro__img {
+  background: url(../img/life1.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  margin-bottom: -120px;
+}
+.intro-1__img {
+  background: url(../img/design1.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  margin-bottom: -120px;
+  display: flex;
+  justify-content: flex-end;
+}
+.intro__box {
+  width: 48%;
+  text-align: left;
+  min-height: 400px;
+  padding: 20px;
+}
+.intro__box h3 {
+  color: #1dd1a1;
+  margin-top: 5px;
+  letter-spacing: 3px;
+  font-size: 18px;
+  line-height: 1.4;
+}
+.intro__box p {
+  font-size: 14px;
+  margin-top: 35px;
+  font-family: 'Poppins';
+}
+.intro__box a {
+  margin-top: 22px;
+  width: 190px;
+}
 /* Community */
+.community {
+  background: #f1f2f6;
+}
+.community__text {
+  width: 28%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.community__text h3 {
+  margin: 10px auto;
+  letter-spacing: 3px;
+  font-size: 18px;
+  line-height: 1.4;
+}
+.community__text p {
+  margin: 10px auto;
+  font-size: 12px;
+  max-width: 180px;
+}
+.community__box {
+  width: 35%;
+  height: 245px;
+}
+.community__box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 /* Email */
+.email {
+  background: url('../img/email.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 800px;
+}
+.email__box {
+  margin: 225px auto 0;
+}
+.email__box h3 {
+  letter-spacing: 3px;
+  font-size: 25px;
+  line-height: 1.4;
+  color: #ffffff;
+}
+.email__box form {
+  margin-top: 20px;
+}
+.email__box input {
+  width: 250px;
+  height: 60px;
+  padding: 20px;
+  margin: 0;
+}
+.email__box button {
+  height: 60px;
+  padding: 20px;
+  margin: 0;
+}
 /* Download */
 /* Footer */
