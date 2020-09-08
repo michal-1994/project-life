@@ -60,6 +60,11 @@ p {
   background: #1dd1a1;
   transition: all 0.2s linear;
 }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 .logo {
   color: #121212;
   font-size: 36px;
@@ -79,11 +84,6 @@ p {
   left: 50%;
   transform: translateX(-50%);
   z-index: 99;
-}
-.nav__list {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
 }
 .nav__list li {
   display: inline-block;
@@ -277,4 +277,88 @@ p {
   background: #1dd1a1;
 }
 /* Download */
+.download {
+  background: #f1f2f6;
+}
+.download__box {
+  width: 90%;
+  margin: auto;
+}
+.download__box p {
+  text-transform: uppercase;
+  margin-top: 10px;
+  font-size: 14px;
+}
+.download__list {
+  margin-top: 50px;
+}
+.download__list li {
+  display: inline-block;
+  border-radius: 3px 0 0 3px;
+  margin: 0 10px;
+}
+.download__list li a {
+  width: 300px;
+  height: 60px;
+  line-height: 60px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+}
+.download__list li a i {
+  background: #1dd1a1;
+  height: 100%;
+  display: inline-block;
+  width: 60px;
+  font-size: 30px;
+  border-radius: 0 3px 3px 0;
+  transition: all 0.2s linear;
+}
+.btn__apple:hover i {
+  color: #121212;
+  transition: all 0.2s linear;
+}
+.btn__android:hover i {
+  color: #121212;
+  transition: all 0.2s linear;
+}
 /* Footer */
+.footer {
+  padding: 40px 0;
+}
+.footer__politics {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+.footer__politics ul {
+  text-align: left;
+}
+.footer__politics ul :last-child {
+  border-right: none;
+}
+.footer__politics ul li {
+  display: inline-block;
+  border-right: 2px solid #38ada9;
+  padding: 0;
+}
+.footer__politics ul li a {
+  letter-spacing: 2px;
+  font-size: 14px;
+  color: #121212;
+  margin-right: 4px;
+  padding: 0;
+  transition: all 0.2s linear;
+}
+.footer__politics ul li a:hover {
+  transition: all 0.2s linear;
+  color: #38ada9;
+}
+.footer__politics p {
+  font-size: 13px;
+  text-align: left;
+  width: 100%;
+}
+.footer__logo i {
+  font-size: 40px;
+}
