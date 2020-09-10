@@ -24,6 +24,11 @@
 *, *::before, *::after {
   box-sizing: border-box;   
 }
+
+html {
+  margin: 0;
+  padding: 0;
+}
   
 body {
   margin: 0;
@@ -103,12 +108,13 @@ ul {
   left: 50%;
   transform: translateX(-50%);
   z-index: 99;
+  width: 100%;
 }
 
 .nav__list {
   li {
     display: inline-block;
-    margin: 0 45px;
+    margin: 0 30px;
     a {
       letter-spacing: 2px;
       font-size: 17px;
@@ -182,14 +188,14 @@ ul {
 .intro__img {
   background: url(../img/life1.png);
   background-repeat: no-repeat;
-  background-position: right;
+  background-position-x: 100%;
   margin-bottom: -120px;
 }
 
 .intro-1__img {
   background: url(../img/design1.png);
   background-repeat: no-repeat;
-  background-position: left;
+  background-position-x: 0%;
   margin-bottom: -120px;
   display: flex;
   justify-content: flex-end;
@@ -410,5 +416,182 @@ ul {
 .footer__logo {
   i {
     font-size: 40px;
+  }
+}
+
+/* Media */ 
+
+@media (max-width: 800px) {
+  section {
+    padding: 80px 0;
+  }
+
+  .container {
+    padding: 0 10px;
+  }
+
+  .nav {
+    height: 70px;
+  }
+
+  .nav__list {
+    position: absolute;
+    top: -100vh;
+    right: 0;
+    width: 100vw;
+    z-index: 998;
+    transition: all .2s linear;
+    background: @color-secondary;
+    li {
+      display: block;
+      margin: 0;
+      width: 100%;
+      text-align: center;
+      height: 50px;
+      line-height: 50px;
+      a {
+        padding: 10px;
+        background: @color-secondary;
+        color: @color-primary;
+      }
+    }
+  }
+
+  .toggle-btn {
+    display: block;
+    position: absolute;
+    right: 40px;
+    top: 20px;
+    z-index: 999;
+  }
+
+  .toggle-btn .bar {
+    background: @color-light;
+    width: 40px;
+    height: 2px;
+    margin: 7px auto;
+    transition: all .2s linear;
+  }
+
+  #toggle:checked ~ .nav__list {
+    visibility: visible;
+    top: 70px;
+    transition: all .1s linear;
+  }
+
+  #toggle:checked body {
+    filter: blur(0.5);
+  }
+
+  #toggle:checked + label.toggle-btn .bar {
+    &:nth-child(2) {
+      transform: translateX(40px);
+      opacity: 0;
+    }
+    &:nth-child(1) {
+      transform: translateY(10px) rotate(45deg);
+    }
+    &:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  }
+
+  .splash {
+    height: 600px;
+  }
+
+  .splash__box {
+    margin: 130px auto 0;
+    h2 {
+      font-size: 30px;
+      padding: 0 20px;
+    }
+    p {
+      padding: 0 20px;
+    }
+  }
+
+  .intro__box {
+    width: 90%;
+    margin: auto;
+    min-height: 300px;
+  }
+
+  .intro__img {
+    background: none;
+    margin-bottom: 0px;
+  }
+  
+  .intro-1__img {
+    background: none;
+    margin-bottom: 0px;
+  }
+
+  .community__text {
+    width: 40%;
+  }
+
+  .community__box {
+    width: 60%;
+  }
+
+  .community__none {
+    display: none;
+  }
+
+  .email {
+    min-height: 600px;
+  }
+
+  .download__list {
+    li {
+      margin-top: 20px;
+    }
+  }
+
+  .footer__politics {
+    margin: auto;
+    ul {
+      margin: auto;
+      text-align: center;
+    }
+    p {
+      text-align: center;
+    }
+  }
+
+  .footer__logo {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 460px) {
+  .community__text {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .community__box {
+    width: 80%;
+    margin: auto;
+  }
+
+  .email__box {
+    h3 {
+      font-size: 24px;
+    }
+    form {
+      margin-top: 30px;
+    }
+    input[type=email] {
+      width: 270px;
+      height: 55px;
+    }
+    button[type=button] {
+      height: 55px;
+      width: 55px;
+      font-size: 18px;
+    }
   }
 }
