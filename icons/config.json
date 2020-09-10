@@ -47,6 +47,12 @@
       "css": "camera",
       "code": 59393,
       "src": "linecons"
+    },
+    {
+      "uid": "440e148d0e21100118eae7036bcd2067",
+      "css": "up-open",
+      "code": 61445,
+      "src": "mfglabs"
     }
   ]
 }

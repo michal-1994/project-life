@@ -106,7 +106,7 @@ ul {
 /* Splash */
 .splash {
   background: url('../img/splash.jpg');
-  height: 745px;
+  height: 820px;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -114,7 +114,7 @@ ul {
 }
 .splash__box {
   color: #ffffff;
-  margin: 205px auto 0;
+  margin: 225px auto 0;
   max-width: 600px;
   text-align: center;
 }
@@ -155,13 +155,13 @@ ul {
 .intro {
   background: #f1f2f6;
 }
-.intro__img {
+.intro__left {
   background: url(../img/life1.png);
   background-repeat: no-repeat;
   background-position-x: 100%;
   margin-bottom: -120px;
 }
-.intro-1__img {
+.intro__right {
   background: url(../img/design1.png);
   background-repeat: no-repeat;
   background-position-x: 0%;
@@ -219,7 +219,7 @@ ul {
   margin: 7px auto;
 }
 .community__box {
-  width: 35%;
+  width: 33%;
   height: 290px;
 }
 .community__box img {
@@ -367,6 +367,28 @@ ul {
 .footer__logo i {
   font-size: 40px;
 }
+/* ScrollTopButton */
+.scrollTopButton {
+  position: fixed;
+  bottom: 60px;
+  right: 60px;
+  display: none;
+  z-index: 999;
+  cursor: pointer;
+  height: 50px;
+  line-height: 50px;
+  width: 50px;
+  color: #ffffff;
+  background: #38ada9;
+  border-radius: 50%;
+  text-align: center;
+}
+.scrollTopButton i {
+  font-size: 24px;
+}
+.show {
+  display: block;
+}
 /* Media */
 @media (max-width: 800px) {
   section {
@@ -450,11 +472,11 @@ ul {
     margin: auto;
     min-height: 300px;
   }
-  .intro__img {
+  .intro__left {
     background: none;
     margin-bottom: 0px;
   }
-  .intro-1__img {
+  .intro__right {
     background: none;
     margin-bottom: 0px;
   }
@@ -462,7 +484,8 @@ ul {
     width: 40%;
   }
   .community__box {
-    width: 60%;
+    width: 55%;
+    margin: auto;
   }
   .community__none {
     display: none;

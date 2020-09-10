@@ -131,7 +131,7 @@ ul {
 
 .splash {
   background: url('../img/splash.jpg');
-  height: 745px;
+  height: 820px;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -140,7 +140,7 @@ ul {
 
 .splash__box {
   color: @color-light;
-  margin: 205px auto 0;
+  margin: 225px auto 0;
   max-width: 600px;
   text-align: center;
   h2 {
@@ -185,14 +185,14 @@ ul {
   background: @color-secondary;
 }
 
-.intro__img {
+.intro__left {
   background: url(../img/life1.png);
   background-repeat: no-repeat;
   background-position-x: 100%;
   margin-bottom: -120px;
 }
 
-.intro-1__img {
+.intro__right {
   background: url(../img/design1.png);
   background-repeat: no-repeat;
   background-position-x: 0%;
@@ -255,7 +255,7 @@ ul {
 }
 
 .community__box {
-  width: 35%;
+  width: 33%;
   height: 290px;
   img {
     height: 100%;
@@ -419,6 +419,32 @@ ul {
   }
 }
 
+/* ScrollTopButton */
+
+.scrollTopButton {
+  position: fixed;
+  bottom: 60px;
+  right: 60px;
+  display: none;
+  z-index: 999;
+  cursor: pointer;
+  height: 50px;
+  line-height: 50px;
+  width: 50px;
+  color: @color-light;
+  background: @color-primary;
+  border-radius: 50%;
+  text-align: center;
+  i {
+    font-size: 24px;
+    
+  }
+}
+
+.show {
+  display: block;
+}
+
 /* Media */ 
 
 @media (max-width: 800px) {
@@ -517,12 +543,12 @@ ul {
     min-height: 300px;
   }
 
-  .intro__img {
+  .intro__left {
     background: none;
     margin-bottom: 0px;
   }
   
-  .intro-1__img {
+  .intro__right {
     background: none;
     margin-bottom: 0px;
   }
@@ -532,7 +558,8 @@ ul {
   }
 
   .community__box {
-    width: 60%;
+    width: 55%;
+    margin: auto;
   }
 
   .community__none {
